@@ -4,7 +4,19 @@ Component in the spirit of Stuart Sierra's reload pattern, using the [`salesforc
 
 ## Usage
 
-FIXME
+```clojure
+(require '[salesforce-client.component :refer [salesforce-client]])
+
+(salesforce-client {:client-id "id"
+                    :client-secret "secret"
+                    :username "username"
+                    :password "password"
+                    :security-token "token"
+                    :sandbox? true  ;; optional
+                    :version "33.0" ;; optional
+                    :sandbox-url "cs10.salesforce.com"} ;; optional
+                    )
+```
 
 ## License
 
